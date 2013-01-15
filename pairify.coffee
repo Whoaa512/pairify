@@ -1,5 +1,7 @@
-ø = true
-∆ = false
+tt = true
+Ff = false
+
+
 
 a =  "Megan Tulac"
 b =  "Nathan Houle"
@@ -19,55 +21,57 @@ o =  "Chris Bobek"
 p =  "June Jeong"
 
 pairingMatrix = [
-  [ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ∆ ],
-  [ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø, ø ],
+  [tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, Ff ],
+  [tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt, tt ],
 ]
 
 labelObj =
-  pairingMatrix[0]  : a
-  pairingMatrix[1]  : b
-  pairingMatrix[2]  : c
-  pairingMatrix[3]  : d
-  pairingMatrix[4]  : e
-  pairingMatrix[5]  : f
-  pairingMatrix[6]  : g
-  pairingMatrix[7]  : h
-  pairingMatrix[8]  : i
-  pairingMatrix[9]  : j
-  pairingMatrix[10] : k
-  pairingMatrix[11] : l
-  pairingMatrix[12] : m
-  pairingMatrix[13] : n
-  pairingMatrix[14] : o
-  pairingMatrix[15] : p
+  0  : a
+  1  : b
+  2  : c
+  3  : d
+  4  : e
+  5  : f
+  6  : g
+  7  : h
+  8  : i
+  9  : j
+  10 : k
+  11 : l
+  12 : m
+  13 : n
+  14 : o
+  15 : p
 
 outputPairs = []
 
-for row in pairingMatrix
-  for col in pairingMatrix[row]
+for row, i in pairingMatrix
+  for col, j in pairingMatrix[row]
     if !col
-      pairingMatrix[row][col] = true
-      rowNum = row
-      colNum = col
-      newPair = "#{labelObj.pairingMatrix[rowNum]} + #{labelObj.pairingMatrix[colNum]}"
+      pairingMatrix[i][j] = true
+      rowNum = i
+      colNum = j
+      console.log rowNum
+      console.log colNum
+      newPair = "#{labelObj.rowNum} + #{labelObj.colNum}"
       outputPairs.push newPair
-      #break col loop
-      #
+      break
 
+console.log outputPairs
 
 # students =  [
 #   "Megan Tulac",
