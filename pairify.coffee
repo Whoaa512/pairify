@@ -1,8 +1,6 @@
 tt = true
 Ff = false
 
-
-
 a =  "Megan Tulac"
 b =  "Nathan Houle"
 c =  "Timothy Schiller"
@@ -60,14 +58,10 @@ labelObj =
 outputPairs = []
 
 for row, i in pairingMatrix
-  for col, j in pairingMatrix[row]
+  for col, j in pairingMatrix[i]
     if !col
       pairingMatrix[i][j] = true
-      rowNum = i
-      colNum = j
-      console.log rowNum
-      console.log colNum
-      newPair = "#{labelObj.rowNum} + #{labelObj.colNum}"
+      newPair = "#{labelObj[i]} + #{labelObj[j]}"
       outputPairs.push newPair
       break
 
