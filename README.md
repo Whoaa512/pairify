@@ -1,0 +1,3 @@
+The beginnings of a random pairing application...
+
+*abandoned for now*
