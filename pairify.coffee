@@ -18,6 +18,24 @@ n =  "Mark Reveley"
 o =  "Chris Bobek"
 p =  "June Jeong"
 
+isPaired =
+  a   :  false
+  b   :  false
+  c   :  false
+  d   :  false
+  e   :  false
+  f   :  false
+  g   :  false
+  h   :  false
+  i   :  false
+  j   :  false
+  k   :  false
+  l   :  false
+  m   :  false
+  n   :  false
+  o   :  false
+  p   :  false
+
 pairingMatrix = [
   [tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
   [tt, tt, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff, Ff ],
@@ -59,42 +77,16 @@ outputPairs = []
 
 for row, i in pairingMatrix
   for col, j in pairingMatrix[i]
-    if !col
-      pairingMatrix[i][j] = true
+
+    # logic to skip rows that where a pair was already made
+    # if pairingMatrix[i-1] != undefined
+    #   if( pairingMatrix[i-1][i] ) then break
+    if !col and (!isPaired[labelObj[i]] and !isPaired[labelObj[j]])
+      col = true
       newPair = "#{labelObj[i]} + #{labelObj[j]}"
+      isPaired[labelObj[i]] = true
+      isPaired[labelObj[j]] = true
       outputPairs.push newPair
       break
 
 console.log outputPairs
-
-# students =  [
-#   "Megan Tulac",
-#   "Nathan Houle",
-#   "Timothy Schiller",
-#   "Adnan Wahab",
-#   "JP Whitaker",
-#   "Carey Winslow",
-#   "Mark Chatkhan",
-#   "Christen Thompson",
-#   "Sherah Smith",
-#   "Mark Rossetti",
-#   "Henry Zhu",
-#   "Albert Lee",
-#   "Paul Bacchus",
-#   "Mark Reveley",
-#   "Chris Bobek",
-#   "June Jeong",
-# ]
-
-
-
-# # shuffle students array
-
-# # pull last 5 pairings from DB,
-# # create hashTable will hold the last five pairings
-
-# # check currentShuffle against hash table for uniqueness
-
-# # if ^check^ passes,
-#   # return the currentShuffle & store in DB
-#   # remove oldest DB entry
